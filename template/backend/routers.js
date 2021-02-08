@@ -1,5 +1,6 @@
 const express = require("express");
 const router = express.Router();
+const SignUp = require("./models/signup");
 router.post("/signup", (req, res) => {
   const signedUp = new SignUp({
     fullName: req.body.fullName,
